@@ -10,7 +10,10 @@
     <div class="main">
       <!-- Mobile image -->
       <div class="mobile">
-        <img src="./images/illustration-sign-up-mobile.svg" alt="" />
+        <img
+          src="./images/illustration-sign-up-mobile.svg"
+          alt="illustration for mobile"
+        />
       </div>
       <!-- left side with all the information -->
       <div class="info">
@@ -34,11 +37,23 @@
         </div>
 
         <!-- form -->
+
         <p class="email">Email Address</p>
-        <form action="/">
-          <input type="email" name="email" />
+        <!-- <span class="email">Email Address</span>
+        <span class="error-message">Enter a valid Email</span> -->
+        <form action="/success.html" id="form">
+          <input
+            id="email"
+            class=""
+            type="email"
+            name="email"
+            required
+            pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
+          />
           <br />
-          <button type="submit">Subscribe to monthly newsletter</button>
+          <button onclick="handleClick()" type="submit">
+            Subscribe to monthly newsletter
+          </button>
         </form>
       </div>
       <!-- right side of the div i.e the image -->
@@ -49,5 +64,7 @@
         />
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

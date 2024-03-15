@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --tomato: hsl(4, 100%, 67%);
+  --yellowish-tomato: hsl(41, 82%, 63%);
+
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* reset css */
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white);
+}
+
+.desktop img {
+  display: none;
+}
+
+.features {
+  display: flex;
+  gap: 1rem;
+  margin: 1.2rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: var(--dark-slate-grey);
+  margin: 1.2rem;
+}
+
+.text {
+  margin: 1.2rem;
+  color: var(--dark-slate-grey);
+}
+
+.email {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--dark-slate-grey);
+  margin: 2rem auto 0.2rem 1.3rem;
+}
+
+input {
+  padding: 0.8rem;
+  margin: 0.5rem 1.3rem;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 75%;
+}
+
+button {
+  padding: 0.8rem;
+  margin: 0.5rem 1.3rem;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  font-weight: bold;
+  width: 83%;
+}
+
+button:hover {
+  background-image: linear-gradient(
+    to right,
+    var(--tomato),
+    var(--yellowish-tomato)
+  );
+  cursor: pointer;
+}

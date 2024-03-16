@@ -17,6 +17,12 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--white);
+
+  /* Centering */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Mobile */
@@ -111,7 +117,7 @@ input:invalid {
     border-radius: 25px;
     background-color: var(--white);
     max-width: 55rem;
-    margin: 9rem auto;
+    /* margin: 9rem auto; */
   }
 
   .info {
